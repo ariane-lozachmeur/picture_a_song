@@ -4,6 +4,7 @@ Python module to create a fun visual from a song lyrics
 ## Inspiration
 This module was inspired by the Vox video "Why we really like repetition in music" (https://www.youtube.com/watch?v=HzzmqUoQobc).
 The idea was to reproduce the visual used in the video.
+Visit this awesome website (https://pudding.cool/2017/05/song-repetition/) for more about song repetition over time!
 
 ## Usage
 Copy the song's lyrics in a <title>.txt file in the songs/ folder \
