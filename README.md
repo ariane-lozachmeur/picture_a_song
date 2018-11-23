@@ -14,7 +14,7 @@ See the image in the pictures/ folder!
 ## A Few Results
 <div>Recent TOP 50 songs:</div>
 <span>
-<img src="https://raw.githubusercontent.com/ariane-lozachmeur/picture_a_song/master/pictures/MIA.png"  width="300" height="200" />
+<img src="https://raw.githubusercontent.com/ariane-lozachmeur/picture_a_song/master/pictures/holloback_girl.png"  width="300" height="200" />
 <img src="https://raw.githubusercontent.com/ariane-lozachmeur/picture_a_song/master/pictures/thank_u_next.png"  width="300" height="200" />
 </span>
 <div>80s TOP 50 songs:</div>
