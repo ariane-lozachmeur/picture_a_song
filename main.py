@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import re
+import argparse
 
 
 def get_words(text):
@@ -66,12 +67,23 @@ def repeat_matrix(words, opt='seq'):
 
 if __name__ == '__main__':
 
-    opt= 'seq'
-    song='holloback_girl'
+    parser = argparse.ArgumentParser()
+    parser.add_argument("file", help="Name of the file containing the lyrics (in the songs folder) WITHOUT the .txt extension")
+    parser.add_argument("--opt", "-o",  type=str, default='seq',
+                        help="Option to generation the colors. seq for sequential,  rdn for random")
+    parser.add_argument("--colormap", "-cmap", type=str, default='rainbow',
+                        help="Matplotlib colormap to generate the image. Default is rainbow. Experiment wit a few!")
+
+    args = parser.parse_args()
+
+    song=args.file
+    opt=args.opt
+    cmap_name = args.colormap
+
     lyrics = read_song('songs/%s.txt' %song)
 
     matrix, colors = repeat_matrix(lyrics, opt=opt)
-    cmap, norm = get_cmap(colors, mpl.cm.rainbow)
+    cmap, norm = get_cmap(colors, plt.get_cmap(cmap_name))
 
     plt.figure()
     plt.imshow(matrix, cmap=cmap, norm=norm)
