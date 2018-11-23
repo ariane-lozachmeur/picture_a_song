@@ -67,7 +67,7 @@ def repeat_matrix(words, opt='seq'):
 if __name__ == '__main__':
 
     opt= 'seq'
-    song='another_one_bites_the_dust'
+    song='holloback_girl'
     lyrics = read_song('songs/%s.txt' %song)
 
     matrix, colors = repeat_matrix(lyrics, opt=opt)
